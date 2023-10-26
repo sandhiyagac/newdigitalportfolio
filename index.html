@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            background-color:#ffb6c1;
+            color:black;
+            padding: 20px;
+        }
+.profile-photo{
+display:block;
+margin:0 auto 20px;
+width:150px;
+height:150px;
+border-radius:50%;
+}
+        nav ul {
+            list-style: none;
+            display: flex;
+            background-color:black;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+        }
+        section {
+            padding: 20px;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>SANDHIYA K</h1>
+        <img class="profile-photo" src="profile.jpeg" alt="Profile Photo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am B.Sc Computer Science Student from Government Arts College(Autonomous),Thanthonimalai,Karur</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- List your projects here -->
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Creating a Webpage</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Creating a Webpage using Html,CSS and JavaScript</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact Number:9688355245</p>
+        <p>Address:Thanthonimalai,Karur</p>
+        <!-- Your contact information here -->
+    </section>
+    <section id="profile">
+        <h2>Profile</h2>
+        <p>Student</p>
+<p>Board Member of Rotaract Club in My College</p>
+<p>First Graduate student in My Family</p>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <!-- Your resume content here -->
+        <a href="your_resume.pdf" target="_blank">Download Resume</a>
+    </section>
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+    
+    <script>
+        // Add your JavaScript code here
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                alert('You clicked on a project!');
+            });
+        });
+    </script>
+</body>
+</html>
